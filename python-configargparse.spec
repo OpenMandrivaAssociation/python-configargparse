@@ -1,6 +1,6 @@
 Name:		python-configargparse
 Version:	1.7
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/c/configargparse/ConfigArgParse-%{version}.tar.gz
 Summary:	A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
 URL:		https://pypi.org/project/configargparse/
