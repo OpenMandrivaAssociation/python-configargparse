@@ -2,11 +2,11 @@
 %define oname ConfigArgParse
 
 Name:		python-configargparse
-Version:	1.7.3
+Version:	1.7.5
 Release:	1
 License:	MIT
 Group:		Development/Python
-Summary:	A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
+Summary:	A drop-in replacement for argparse
 URL:		https://pypi.org/project/configargparse/
 Source0:	https://files.pythonhosted.org/packages/source/c/%{module}/%{module}-%{version}.tar.gz#/%{name}-%{version}.tar.gz
 
@@ -17,7 +17,8 @@ BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(wheel)
 
 %description
-A drop-in replacement for argparse that allows options to also be set via config files and/or environment variables.
+A drop-in replacement for argparse with added support for
+config filesand environment variables.
 
 %prep -a
 # Remove bundled egg-info
