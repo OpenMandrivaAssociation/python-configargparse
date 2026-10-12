@@ -3,7 +3,7 @@
 
 Name:		python-configargparse
 Version:	1.7.5
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Python
 Summary:	A drop-in replacement for argparse
@@ -24,6 +24,10 @@ config filesand environment variables.
 %prep -a
 # Remove bundled egg-info
 rm -rf ConfigArgParse.egg-info
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %{py_sitedir}/%{module}.py
